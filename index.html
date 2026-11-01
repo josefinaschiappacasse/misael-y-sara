@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misael &amp; Sara · Nos casamos</title>
+<meta name="description" content="Te invitamos a celebrar con nosotros: viernes 19 de febrero de 2027, Isla de Maipo.">
+<meta property="og:title" content="Misael & Sara · Nos casamos">
+<meta property="og:description" content="Viernes 19 de febrero de 2027 · Isla de Maipo">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#5b6e4f;
+  --crema:#f1ecd9;
+  --tinta:#2f3a2b;
+  --script:'Allura','Snell Roundhand','Brush Script MT',cursive;
+  --serif:'EB Garamond',Garamond,Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--verde)}
+body{
+  font-family:var(--serif);color:var(--crema);
+  font-size:1.2rem;line-height:1.45;text-align:center;
+  -webkit-text-size-adjust:100%;overflow-x:hidden;
+}
+/* Fondo de papel fijo, funciona también en celular */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;
+  background:var(--verde) url("img/fondo.jpg") center/cover no-repeat;
+}
+main{max-width:480px;margin:0 auto;padding:clamp(28px,6vw,48px) 22px 40px}
+img{display:block;max-width:100%;height:auto;margin-inline:auto}
+section{margin-bottom:clamp(40px,9vw,64px)}
+a:focus-visible{outline:2px solid var(--crema);outline-offset:4px;border-radius:2px}
+
+/* Portada */
+.cajita{width:min(64%,290px)}
+h1{
+  font-family:var(--script);font-weight:400;
+  font-size:clamp(3rem,13vw,3.8rem);line-height:1.1;margin:10px 0 10px;
+}
+.intro{max-width:20em;margin-inline:auto;font-weight:600;font-size:1.12rem}
+
+/* Fecha y lugar sobre los óvalos */
+.ovalos{position:relative;container-type:inline-size;color:var(--tinta)}
+.ovalos .celda{
+  position:absolute;top:0;bottom:0;width:50%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.celda.fecha{left:0}
+.celda.lugar{right:0}
+.fecha .dia{font-size:4.4cqw;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.fecha .mes{font-size:10.5cqw;font-weight:600;line-height:1.1;margin:1.5cqw 0 0}
+.fecha .anio{font-size:5cqw;font-weight:600}
+.fecha .hora{font-size:4.2cqw;font-weight:600;margin-top:5cqw}
+.lugar img{width:9cqw;margin:0 auto 3cqw}
+.lugar a{
+  color:var(--tinta);font-weight:600;font-size:4.8cqw;line-height:1.35;
+  text-decoration:underline;text-underline-offset:.2em;
+  max-width:30cqw;
+}
+
+/* Confirmar asistencia */
+.confirmar a{
+  display:inline-block;color:var(--crema);font-weight:600;
+  font-size:1.5rem;letter-spacing:.03em;text-transform:uppercase;
+  text-decoration:underline;text-underline-offset:.22em;text-decoration-thickness:2px;
+  padding:6px 4px;transition:opacity .2s;
+}
+.confirmar a:hover{opacity:.8}
+.confirmar p{max-width:19em;margin:10px auto 0;font-size:1.12rem}
+
+/* Ilustraciones */
+.lirio{width:min(18%,86px);margin-bottom:-6px;position:relative;z-index:1}
+.guirnalda{width:calc(100% + 44px);max-width:none;margin-left:-22px}
+.mesa{width:min(72%,330px);margin-top:28px}
+
+/* Regalo */
+.regalo p{max-width:19em;margin:0 auto 22px;font-size:1.12rem}
+.marco{position:relative;width:min(78%,330px);margin:0 auto}
+.marco .datos{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-style:italic;font-size:clamp(.78rem,3.1vw,.95rem);line-height:1.38;padding:0 14%;
+}
+
+/* Cierre */
+.gracias{font-family:var(--script);font-size:clamp(1.9rem,8vw,2.3rem);line-height:1.2;margin-bottom:18px}
+.pareja{width:min(52%,200px)}
+.ramita{width:min(70%,260px);margin-top:6px}
+.nota{margin-top:30px;font-size:.9rem;opacity:.75;font-style:italic}
+
+/* Una sola entrada suave al abrir la página */
+@media (prefers-reduced-motion:no-preference){
+  .cajita,h1,.intro{animation:entra 1s ease-out both}
+  h1{animation-delay:.15s}.intro{animation-delay:.3s}
+  @keyframes entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<main>
+
+  <section class="portada">
+    <img class="cajita" src="img/cajita.png" alt="Caja con argollas de matrimonio y flores" width="380" height="309">
+    <h1>Misael &amp; Sara</h1>
+    <p class="intro">¡Nos casamos! Y por lo importantes que son para nosotros, les pedimos que nos acompañen en este día especial</p>
+  </section>
+
+  <section class="ovalos" aria-label="Fecha y lugar">
+    <img src="img/ovalos.png" alt="" width="680" height="594">
+    <div class="celda fecha">
+      <span class="dia">Viernes 19</span>
+      <span class="mes">Febrero</span>
+      <span class="anio">2027</span>
+      <span class="hora">xx:xx pm</span>
+    </div>
+    <div class="celda lugar">
+      <img src="img/pin.png" alt="" width="90" height="122">
+      <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Santelices+815+Isla+de+Maipo" target="_blank" rel="noopener">Avenida Santelices 815, Isla de Maipo</a>
+    </div>
+  </section>
+
+  <section class="confirmar">
+    <!-- CAMBIA el número por el WhatsApp de ustedes (formato 569XXXXXXXX) o pon el enlace de tu Google Form -->
+    <a href="https://wa.me/56900000000?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Misael%20y%20Sara" target="_blank" rel="noopener">Confirmar asistencia</a>
+    <p>Con mucho cariño agradecemos nos confirmes tu asistencia antes del Xdía de XMes</p>
+  </section>
+
+  <section class="ilustracion">
+    <img class="lirio" src="img/lirio.png" alt="" width="200" height="235">
+    <img class="guirnalda" src="img/guirnalda.png" alt="" width="900" height="176">
+    <img class="mesa" src="img/mesa.png" alt="Mesa de celebración con velas y flores" width="420" height="368">
+  </section>
+
+  <section class="regalo">
+    <p>Tu presencia es nuestro mejor regalo. Si además deseas acompañarnos en esta nueva etapa, aquí puedes encontrar nuestros datos.</p>
+    <div class="marco">
+      <img src="img/marco.png" alt="" width="500" height="263">
+      <div class="datos">
+        <span>Sara Ortiz</span>
+        <span>20.688.834-2</span>
+        <span>Cuenta Vista</span>
+        <span>54570017299</span>
+        <span>Banco Falabella</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <p class="gracias">Gracias por ser parte de este día</p>
+    <img class="pareja" src="img/pareja.png" alt="Ilustración de la pareja brindando" width="360" height="324">
+    <img class="ramita" src="img/ramita.png" alt="" width="420" height="54">
+  </section>
+
+</main>
+</body>
+</html>
